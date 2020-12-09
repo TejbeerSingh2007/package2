@@ -46,11 +46,16 @@ function setup() {
 
 	bottomBodySprite = createSprite(400,650,200,20);
 	bottomBodySprite.shapeColor = "red";
-	
+
+	leftBody = Bodies.rectangle(290,560,20,200, {isStatic:true});
+	World.add(world, leftBody);
 
 	leftBodySprite = createSprite(290,560,20,200);
 	leftBodySprite.shapeColor = "red";
 
+	rightBody = Bodies.rectangle(490,560,20,200, {isStatic:true});
+	World.add(world, rightBody);
+	
 	rightBodySprite = createSprite(490,560,20,200);
 	rightBodySprite.shapeColor = "red";
 
